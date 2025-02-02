@@ -58,6 +58,26 @@ const projects: Array<ProjectInterface> = [
         ],
         year: 2022
     },
+    {
+        name: "Type",
+        description: "Description 1",
+        image: "/projects/type.PNG",
+        tags: [
+            {
+                name: "html",
+                color: "#E34F26"
+            },
+            {
+                name: "javascript",
+                color: "#F7DF1E"
+            },
+            {
+                name: "bootstrap",
+                color: "#7952B3"
+            }
+        ],
+        year: 2021
+    },
 	{
         name: "Pikacord: Pokemon Bot",
         description: "Description 1",

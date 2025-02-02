@@ -14,12 +14,12 @@ export default function Projects({ projectRef }: ProjectsProps) {
 
     const scale = useTransform(smoothProgress, [0, 1], [0, 1]);
     const opacity = useTransform(smoothProgress, [0, 1], [0, 1]);
-    const x = useTransform(scrollYProgress, [0, 1], ["55%", "-95%"]);
+    const x = useTransform(scrollYProgress, [0, 1], ["70%", "-95%"]);
 
     return (
-        <div id="projects" ref={projectRef} className="w-full h-[400vh] flex flex-col gap-[20rem]">
+        <div id="projects" ref={projectRef} className={`w-full h-[400vh] flex flex-col gap-[20rem]`}>
             <motion.div className="w-full sticky top-0 h-screen flex flex-col justify-end overflow-hidden gap-4">
-                    <motion.div style={{ x }} className="relative w-[calc(3*100%)] flex gap-10 overflow-hidden flex-none">
+                    <motion.div style={{ x }} className="relative w-[calc(4*100%)] flex gap-10 overflow-hidden flex-none">
                         {projectList.sort((a, b) => b.year - a.year).map((project, index) => {
                             return (
                                 <motion.div
