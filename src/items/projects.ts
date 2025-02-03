@@ -36,7 +36,7 @@ const projects: Array<ProjectInterface> = [
             }
         ],
         year: 2025,
-        link: "/#home"
+        link: "https://github.com/repyh/repyh-portfolio"
     },
     {
         name: "2022 Portfolio",
@@ -151,7 +151,7 @@ const projects: Array<ProjectInterface> = [
         link: "https://pylagged-website.vercel.app/"
     },
     {
-        name: "Desktop Download Manager",
+        name: "Download Manager",
         description: "Description 1",
         image: "/projects/desktop-man.PNG",
         tags: [

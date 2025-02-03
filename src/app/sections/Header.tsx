@@ -2,7 +2,7 @@
 
 export default function Header({ topMessage, section }: { topMessage: string, section: string }) {
     return (
-        <div className="w-full h-28 flex items-center fixed z-10">
+        <div className="w-full h-28 flex items-center fixed z-10 bg-gradient-to-b from-[#0a0a0a] to-transparent">
             <div className="h-full flex px-6 items-center justify-center gap-4">
                 <img className="w-10" src="/logo_rep.png" />
             </div>

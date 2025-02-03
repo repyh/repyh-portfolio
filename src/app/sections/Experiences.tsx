@@ -9,7 +9,7 @@ export default function Experiences({ experiencesRef }: { experiencesRef: React.
                 <div className="absolute flex flex-col gap-36 overflow-hidden">
                     {experiences.filter((e, i) => !(i % 2)).map((exp, index) => {
                         return (
-                            <motion.div key={index} transition={{ type: 'tween', duration: 0.7 }} whileInView={{ right: 0, marginRight: '0.5rem' }} className="w-72 h-36 pr-4 relative border-b-2 border-white top-0 -right-72 flex flex-col justify-end py-4 gao-2">
+                            <motion.div key={index} transition={{ type: 'tween', duration: 0.7, ease: 'easeOut' }} whileInView={{ right: 0, marginRight: '0.5rem' }} className="w-72 h-36 pr-4 relative border-b-2 border-white top-0 -right-72 flex flex-col justify-end py-4 gao-2">
                                 <h1 className="text-white inter text-lg font-bold">{exp.title}</h1>
                                 <h1 className="text-[#51C4D3] text-sm nunito">{exp.description} <span className="text-neutral-700">({exp.from.month} {exp.from.year})</span></h1>
                             </motion.div>
@@ -22,7 +22,7 @@ export default function Experiences({ experiencesRef }: { experiencesRef: React.
                 <div className="absolute flex flex-col gap-36 pt-36 overflow-hidden">
                     {experiences.filter((e, i) => (i % 2)).map((exp, index) => {
                         return (
-                            <motion.div key={index} transition={{ type: 'tween', duration: 0.7 }} whileInView={{ left: 0, marginLeft: '0.5rem' }} className="w-72 h-36 pl-4 relative border-b-2 border-white top-0 -left-72 flex flex-col justify-end py-4 gao-2">
+                            <motion.div key={index} transition={{ type: 'tween', duration: 0.7, ease: 'easeOut' }} whileInView={{ left: 0, marginLeft: '0.5rem' }} className="w-72 h-36 pl-4 relative border-b-2 border-white top-0 -left-72 flex flex-col justify-end py-4 gao-2">
                                 <h1 className="text-white inter text-lg font-bold">{exp.title}</h1>
                                 <h1 className="text-[#51C4D3] text-sm nunito">{exp.description}  <span className="text-neutral-700">({exp.from.month} {exp.from.year})</span></h1>
                             </motion.div>

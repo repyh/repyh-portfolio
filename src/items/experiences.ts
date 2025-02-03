@@ -68,18 +68,18 @@ const experiences = [
         }
     },
     {
-        title: "UPH's Sistech CP Team",
-        description: "Part of the competitive programming team representing University of Pelita Harapan.",
-        from: {
-            month: "October",
-            year: 2024
-        }
-    },
-    {
         title: "Falcon Project 14 UPH Committee",
         description: "Part of Design and Multimedia division as a volunteer.",
         from: {
             month: "August",
+            year: 2024
+        }
+    },
+    {
+        title: "ICPC INC 2024",
+        description: "Part of the competitive programming team representing University of Pelita Harapan at INC 2024.",
+        from: {
+            month: "October",
             year: 2024
         }
     }

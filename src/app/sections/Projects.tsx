@@ -14,7 +14,7 @@ export default function Projects({ projectRef }: ProjectsProps) {
 
     const scale = useTransform(smoothProgress, [0, 1], [0, 1]);
     const opacity = useTransform(smoothProgress, [0, 1], [0, 1]);
-    const x = useTransform(scrollYProgress, [0, 1], ["70%", "-95%"]);
+    const x = useTransform(scrollYProgress, [0, 1], ["85%", "-105%"]);
 
     return (
         <div id="projects" ref={projectRef} className={`w-full h-[400vh] flex flex-col gap-[20rem]`}>
@@ -24,7 +24,7 @@ export default function Projects({ projectRef }: ProjectsProps) {
                             return (
                                 <motion.div
                                     key={index}
-                                    className="relative h-96 rounded w-[30rem] flex-none bg-[#1a1a1a] overflow-hidden flex flex-col"
+                                    className="relative h-[26rem] rounded-md w-[30rem] flex-none bg-[#1a1a1a] overflow-hidden flex flex-col"
                                 >
                                     <div className="w-full h-[60%] overflow-hidden flex justify-center items-center">
                                         <img className="h-full" src={project.image} />
@@ -32,13 +32,13 @@ export default function Projects({ projectRef }: ProjectsProps) {
                                     <div className="relative">
                                         <motion.div transition={{ type: 'tween', duration: 0.5, bounce: 0.1 }} whileInView={{ width: '0' }} className="inset w-full h-full absolute z-20 bg-[#51C4D3]"></motion.div>
                                         <h1
-                                            className="text-3xl px-2 w-full inter font-light uppercase z-10 border-b-2 border-[#51C4D3] text-white"
+                                            className="text-3xl text-ellipsis px-4 w-full inter font-light uppercase z-10 pt-4 text-white"
                                         >
                                             {project.name}
                                         </h1>
                                     </div>
                                     {project.tags && 
-                                        <div className="w-full flex px-2 mt-4 gap-2">
+                                        <div className="w-full flex px-4 mt-2 gap-2">
                                             {project.tags.map((tag, index) => {
                                                 return (
                                                     <div key={index} style={{ backgroundColor: tag.color }} className={`text-white nunito text-xs rounded-md px-2 py-[0.125rem] font-bold`}>{tag.name}</div>
@@ -46,7 +46,7 @@ export default function Projects({ projectRef }: ProjectsProps) {
                                             })}
                                         </div>
                                     }
-                                    <div className="w-full opacity-10 px-2">
+                                    <div className="w-full opacity-10 px-4">
                                         <h1 className="text-7xl mt-2 inter font-extrabold italic">{project.year ?? '0000'}</h1>
                                     </div>
                                     {project.link && (
